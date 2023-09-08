@@ -93,7 +93,9 @@ export default {
           <li v-for="option in sites">{{ option }}</li>
         </ul>
       </div>
-      <div class="right"></div>
+      <div class="right">
+        <img src="../../public/img/dc-logo-bg.png" alt="" />
+      </div>
     </div>
 
     <!-- BOTTOM FOOTER  -->
@@ -131,12 +133,15 @@ export default {
   background-image: url("../../public/img/footer-bg.jpg");
   height: 300px;
   color: rgb(174, 167, 167);
+  display: flex;
+  justify-content: space-between;
 
   .left {
     height: 100%;
     display: flex;
+    justify-content: center;
     gap: 2rem;
-    margin: 0 15%;
+    width: 100%;
   }
 
   h4 {
@@ -148,6 +153,16 @@ export default {
   li {
     margin-top: 5px;
     list-style: none;
+  }
+
+  .right {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  img {
+    width: 300px;
   }
 }
 </style>
