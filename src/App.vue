@@ -13,8 +13,21 @@ export default {
 </script>
 
 <template>
-  <h1>
+  <div class="wrapper">
     <AppHeader />
-  </h1>
+  </div>
+  <AppMain />
+  <AppFooter />
 </template>
-<style></style>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  margin: 0 20%;
+}
+</style>

@@ -7,6 +7,17 @@ export default {
 </script>
 
 <template>
-  <h1>ciao</h1>
+  <main>
+    <div>CONTENT GOES HERE</div>
+  </main>
 </template>
-<style></style>
+
+<style lang="scss" scoped>
+main {
+  background-color: black;
+  height: 200px;
+  div {
+    color: white;
+  }
+}
+</style>
