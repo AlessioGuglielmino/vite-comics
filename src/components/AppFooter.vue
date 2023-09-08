@@ -99,7 +99,21 @@ export default {
     </div>
 
     <!-- BOTTOM FOOTER  -->
-    <div class="bottom"></div>
+    <div class="bottom">
+      <div class="container">
+        <div class="bottom-left"><p>SIGN-UP NOW!</p></div>
+        <div class="bottom-right">
+          <div class="icon-container">
+            <span class="follow">FOLLOW US</span>
+            <img src="../../public/img/footer-facebook.png" alt="" />
+            <img src="../../public/img/footer-periscope.png" alt="" />
+            <img src="../../public/img/footer-pinterest.png" alt="" />
+            <img src="../../public/img/footer-twitter.png" alt="" />
+            <img src="../../public/img/footer-youtube.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
 </template>
 
@@ -163,6 +177,39 @@ export default {
   }
   img {
     width: 300px;
+  }
+}
+
+.bottom {
+  height: 120px;
+  background-color: #303030;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin: 0 20%;
+  }
+  .bottom-left {
+    border-bottom-style: none;
+    border: 2px solid #0282f9;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+  }
+  p {
+    color: white;
+  }
+  .icon-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: #0282f9;
+    font-weight: bolder;
   }
 }
 </style>
