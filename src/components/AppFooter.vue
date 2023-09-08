@@ -35,6 +35,26 @@ export default {
         "News",
       ],
       Shops: ["Shop DC", "Shop DC Collectibles"],
+      dc: [
+        "Term of use",
+        "Privacy policy",
+        "Ad choice",
+        "Adversing",
+        "Jobs",
+        "Subscriptions ",
+        "Talent",
+        "CPSC Certificates",
+        "Rating",
+        "Show help",
+        "Contact us",
+      ],
+      sites: [
+        " DC",
+        "MAD Magazine",
+        " DC Kids",
+        " DC Universe",
+        " DC Power Visa",
+      ],
     };
   },
 };
@@ -54,13 +74,23 @@ export default {
     <!-- CENTER FOOTER  -->
     <div class="center">
       <div class="left">
+        <div>
+          <ul>
+            <h4>DC COMICS</h4>
+            <li v-for="option in dcComics">{{ option }}</li>
+          </ul>
+          <ul>
+            <h4>SHOP</h4>
+            <li v-for="shop in Shops">{{ shop }}</li>
+          </ul>
+        </div>
         <ul>
-          <h4>DC COMICS</h4>
-          <li v-for="option in dcComics">{{ option }}</li>
+          <h4>DC</h4>
+          <li v-for="option in dc">{{ option }}</li>
         </ul>
         <ul>
-          <h4>SHOP</h4>
-          <li v-for="shop in Shops">{{ shop }}</li>
+          <h4>SITES</h4>
+          <li v-for="option in sites">{{ option }}</li>
         </ul>
       </div>
       <div class="right"></div>
@@ -104,6 +134,9 @@ export default {
 
   .left {
     height: 100%;
+    display: flex;
+    gap: 2rem;
+    margin: 0 15%;
   }
 
   h4 {
@@ -114,6 +147,7 @@ export default {
 
   li {
     margin-top: 5px;
+    list-style: none;
   }
 }
 </style>
