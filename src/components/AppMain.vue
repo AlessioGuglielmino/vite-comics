@@ -15,7 +15,7 @@ export default {
 <style lang="scss" scoped>
 main {
   background-color: black;
-  height: 200px;
+  height: 50px;
   div {
     color: white;
   }

@@ -8,7 +8,7 @@ export default {
 
 <template>
   <header>
-    <div><img src="/dc-logo.png" /></div>
+    <div><img src="../../public/img/dc-logo.png" /></div>
     <div>
       <ul>
         <li>CHARATERS</li>
@@ -31,7 +31,7 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 150px;
+  height: 80px;
 
   img {
     width: 75px;
