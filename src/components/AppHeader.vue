@@ -8,7 +8,7 @@ export default {
 
 <template>
   <header>
-    <div><img src="../../public/img/dc-logo.png" /></div>
+    <div><img src="/img/dc-logo.png" /></div>
     <div>
       <ul>
         <li>CHARATERS</li>

@@ -94,22 +94,22 @@ export default {
         </ul>
       </div>
       <div class="right">
-        <img src="../../public/img/dc-logo-bg.png" alt="" />
+        <img src="/img/dc-logo-bg.png" alt="" />
       </div>
     </div>
 
     <!-- BOTTOM FOOTER  -->
     <div class="bottom">
       <div class="container">
-        <div class="bottom-left"><p>SIGN-UP NOW!</p></div>
+        <div class="bottom-left"><p class="sign">SIGN-UP NOW!</p></div>
         <div class="bottom-right">
           <div class="icon-container">
             <span class="follow">FOLLOW US</span>
-            <img src="../../public/img/footer-facebook.png" alt="" />
-            <img src="../../public/img/footer-periscope.png" alt="" />
-            <img src="../../public/img/footer-pinterest.png" alt="" />
-            <img src="../../public/img/footer-twitter.png" alt="" />
-            <img src="../../public/img/footer-youtube.png" alt="" />
+            <img src="/img/footer-facebook.png" alt="" />
+            <img src="/img/footer-periscope.png" alt="" />
+            <img src="/img/footer-pinterest.png" alt="" />
+            <img src="/img/footer-twitter.png" alt="" />
+            <img src="/img/footer-youtube.png" alt="" />
           </div>
         </div>
       </div>
@@ -199,6 +199,9 @@ export default {
   }
   p {
     color: white;
+    .sign {
+      padding: 1rem;
+    }
   }
   .icon-container {
     display: flex;
