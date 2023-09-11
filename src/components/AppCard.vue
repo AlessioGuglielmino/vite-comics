@@ -25,7 +25,7 @@ export default {
   cursor: pointer;
 
   img {
-    width: 50%;
+    width: 80%;
   }
   h3 {
     color: rgb(189, 181, 181);

@@ -134,7 +134,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0, 20%;
+    margin: 0 20%;
   }
   .load {
     display: flex;
