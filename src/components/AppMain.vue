@@ -1,5 +1,5 @@
 <script>
-import appCard from "./AppCard.vue";
+import AppCard from "./AppCard.vue";
 
 export default {
   data() {
@@ -91,7 +91,7 @@ export default {
     };
   },
 
-  components: { appCard },
+  components: { AppCard },
 };
 </script>
 
@@ -100,15 +100,25 @@ export default {
     <div class="jumbo">
       <img class="img" src="../../public/img/jumbotron.jpg" alt="" />
     </div>
+    <div class="current"><span> CURRENT SERIES</span></div>
+
     <div class="container-card">
-      <appCard v-for="(card, index) in dcComics" :key="index" :card="card" />
+      <AppCard
+        v-for="comic in dcComics"
+        :thumb="comic.thumb"
+        :series="comic.series"
+        :key="comic.thumb"
+      />
     </div>
+
+    <div class="load"><span> LOAD MORE </span></div>
   </main>
 </template>
 
 <style lang="scss" scoped>
 main {
   background-color: black;
+  position: relative;
   img {
     height: 100%;
     width: 100%;
@@ -123,6 +133,25 @@ main {
   .container-card {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    margin: 0, 20%;
+  }
+  .load {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+  }
+  span {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #0282f9;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+  .current {
+    margin-left: 30px;
   }
 }
 </style>
